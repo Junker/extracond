@@ -3,7 +3,7 @@
   :author "Dmitrii Kosenkov"
   :license "GPL3"
   :depends-on ()
-  :description "Extra set of conditional macroses"
+  :description "Extra set of conditional macros"
   :homepage "https://github.com/Junker/extracond"
   :source-control (:git "https://github.com/Junker/extracond.git")
   :components ((:file "package")
