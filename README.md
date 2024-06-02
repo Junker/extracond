@@ -17,23 +17,23 @@ This system can be installed from [UltraLisp](https://ultralisp.org/) like this:
 ```common-lisp
 (defmacro let1 (var val &body body))
 ```
-Bind VAR to VAL and evaluate BODY. Same as `(let ((VAR VAL)) BODY)`
+Bind `VAR` to `VAL` and evaluate `BODY`. Same as `(let ((VAR VAL)) BODY)`
 
 ```common-lisp
 (defmacro if-let1 (var val &body body))
 ```
-Bind VAR to VAL in THEN/ELSE form.
+Bind `VAR` to `VAL` in THEN/ELSE form.
 
 ```common-lisp
 (defmacro when-let1 (var val &body body))
 ```
-Bind VAR to VAL and executes BODY if VAL is non-nil.
+Bind `VAR` to `VAL` and executes `BODY` if `VAL` is non-nil.
 
 ```common-lisp
 (defmacro if-let* (bindings then-form else-form))
 ```
-Creates new variable bindings, and conditionally executes either THEN-FORM or ELSE-FORM. ELSE-FORM defaults to NIL.
-IF-LET* is similar to IF-LET, but the bindings of variables are performed sequentially rather than in parallel.
+Creates new variable bindings, and conditionally executes either `THEN-FORM` or `ELSE-FORM`. `ELSE-FORM` defaults to `NIL`.
+`IF-LET*` is similar to `IF-LET`, but the bindings of variables are performed sequentially rather than in parallel.
 
 ```common-lisp
 (defmacro cond-list (&rest clauses))
@@ -89,3 +89,7 @@ and it is spliced into the resulting list, like unquote-splicing.
   ;; ⇒ (:x 2 :z 5)
 
 ```
+
+# Credits
+
+- `cond-list` adapted from [Emacs-gauche-macros](https://github.com/mhayashi1120/Emacs-gauche-macros/blob/main/gauche-macros.el)
