@@ -17,7 +17,7 @@ This system can be installed from [UltraLisp](https://ultralisp.org/) like this:
 ```common-lisp
 (defmacro let1 (var val &body body))
 ```
-Bind VAR to VAL and evaluate BODY. Same as (let ((VAR VAL)) BODY)
+Bind VAR to VAL and evaluate BODY. Same as `(let ((VAR VAL)) BODY)`
 
 ```common-lisp
 (defmacro if-let1 (var val &body body))
